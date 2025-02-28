@@ -7,12 +7,42 @@
     <!-- daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .popins-fonts {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
 
     <title>DevBoard</title>
 </head>
 
-<body>
+<body class="popins-fonts bg-[#F4F7FF] w-full h-screen pt-6">
+    <header class="w-[1536px] mx-auto bg-[#ffffff] rounded-2xl">
+        <nav class="flex justify-between py-[18px] px-6">
+            <div class="flex gap-[11px]">
+                <img src="assets/logo.png" alt="logo">
+                <h1 class="text-[35px] my-auto"><span class="font-light">Dev</span><span class="font-bold">Board</span>
+                </h1>
+            </div>
+            <div class="flex gap-[38px]">
+                <div class="bg-[#F4F7FF] flex px-4 py-3 gap-4 rounded-[32px]">
+                    <img class="w-[32px] h-[32px] my-auto" src="assets/checkbox.png" alt="">
+                    <h1 class="text-[#1E1E1E] text-[32px] font-bold">23</h1>
+                </div>
+                <div class="bg-[#f4f7ff] p-3 rounded-[50%]">
+                    <button><img src="assets/theme-btn.png" alt=""></button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    
 </body>
 
 </html>
