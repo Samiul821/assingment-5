@@ -6,6 +6,11 @@ document
     document.body.style.backgroundColor = randomColor;
   });
 
+// blog.html
+document.getElementById("blog-page").addEventListener("click", function () {
+  window.location.href = "./blog.html";
+});
+
 // Task section
 // card 1
 document.getElementById("card-btn").addEventListener("click", function (event) {
@@ -234,5 +239,5 @@ document
     const activityLog = document.getElementById("activity-log");
     while (activityLog.firstChild) {
       activityLog.removeChild(activityLog.firstChild);
-    }  
+    }
   });
