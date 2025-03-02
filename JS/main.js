@@ -15,6 +15,10 @@ document.getElementById("card-btn").addEventListener("click", function (event) {
   const pulsNumber = getInnerTextId("puls-number");
   const mobile = document.getElementById("mobile");
   const convertedMobile = mobile.textContent;
+  let now = new Date();
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+  let seconds = now.getSeconds();
 
   if (mainNumber > 0) {
     const sum = mainNumber - 1;
@@ -25,7 +29,7 @@ document.getElementById("card-btn").addEventListener("click", function (event) {
     const container = document.getElementById("activity-log");
     const p = document.createElement("p");
     p.innerHTML = `
-      You have completed the task ${convertedMobile} at 
+      You have completed the task ${convertedMobile} at  ${hours}:${minutes}:${seconds}
       `;
     container.appendChild(p);
 
@@ -33,6 +37,8 @@ document.getElementById("card-btn").addEventListener("click", function (event) {
     button.style.backgroundColor = "#e0e0e0";
     button.style.color = "#a0a0a0";
     button.style.cursor = "default";
+
+    alert("Board updated Successfull");
   }
 });
 
@@ -46,6 +52,10 @@ document
     const pulsNumber = getInnerTextId("puls-number");
     const dark = document.getElementById("dark");
     const convertedDark = dark.textContent;
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
 
     if (mainNumber > 0) {
       const sum = mainNumber - 1;
@@ -56,7 +66,7 @@ document
       const container = document.getElementById("activity-log");
       const p = document.createElement("p");
       p.innerHTML = `
-      You have completed the task ${convertedDark} at 
+      You have completed the task ${convertedDark} at  ${hours}:${minutes}:${seconds}
       `;
       container.appendChild(p);
 
@@ -64,6 +74,8 @@ document
       button.style.backgroundColor = "#e0e0e0";
       button.style.color = "#a0a0a0";
       button.style.cursor = "default";
+
+      alert("Board updated Successfull");
     }
   });
 
@@ -77,6 +89,10 @@ document
     const pulsNumber = getInnerTextId("puls-number");
     const optimize = document.getElementById("optimize");
     const convertedOptimize = optimize.textContent;
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
 
     if (mainNumber > 0) {
       const sum = mainNumber - 1;
@@ -87,7 +103,7 @@ document
       const container = document.getElementById("activity-log");
       const p = document.createElement("p");
       p.innerHTML = `
-      You have completed the task ${convertedOptimize} at 
+      You have completed the task ${convertedOptimize} at  ${hours}:${minutes}:${seconds}
       `;
       container.appendChild(p);
 
@@ -95,6 +111,8 @@ document
       button.style.backgroundColor = "#e0e0e0";
       button.style.color = "#a0a0a0";
       button.style.cursor = "default";
+
+      alert("Board updated Successfull");
     }
   });
 
@@ -108,6 +126,10 @@ document
     const pulsNumber = getInnerTextId("puls-number");
     const emoji = document.getElementById("emoji");
     const convertedEmoji = emoji.textContent;
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
 
     if (mainNumber > 0) {
       const sum = mainNumber - 1;
@@ -118,7 +140,7 @@ document
       const container = document.getElementById("activity-log");
       const p = document.createElement("p");
       p.innerHTML = `
-      You have completed the task ${convertedEmoji} at 
+      You have completed the task ${convertedEmoji} at  ${hours}:${minutes}:${seconds}
       `;
       container.appendChild(p);
 
@@ -126,6 +148,8 @@ document
       button.style.backgroundColor = "#e0e0e0";
       button.style.color = "#a0a0a0";
       button.style.cursor = "default";
+
+      alert("Board updated Successfull");
     }
   });
 
@@ -139,6 +163,10 @@ document
     const pulsNumber = getInnerTextId("puls-number");
     const integrate = document.getElementById("integrate");
     const convertedIntegrate = integrate.textContent;
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
 
     if (mainNumber > 0) {
       const sum = mainNumber - 1;
@@ -149,7 +177,7 @@ document
       const container = document.getElementById("activity-log");
       const p = document.createElement("p");
       p.innerHTML = `
-      You have completed the task ${convertedIntegrate} at 
+      You have completed the task ${convertedIntegrate} at  ${hours}:${minutes}:${seconds}
       `;
       container.appendChild(p);
 
@@ -157,6 +185,8 @@ document
       button.style.backgroundColor = "#e0e0e0";
       button.style.color = "#a0a0a0";
       button.style.cursor = "default";
+
+      alert("Board updated Successfull");
     }
   });
 // card6
@@ -169,6 +199,10 @@ document
     const pulsNumber = getInnerTextId("puls-number");
     const improveJob = document.getElementById("improve-job");
     const convertedImproveJob = improveJob.textContent;
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
 
     if (mainNumber > 0) {
       const sum = mainNumber - 1;
@@ -179,7 +213,7 @@ document
       const container = document.getElementById("activity-log");
       const p = document.createElement("p");
       p.innerHTML = `
-      You have completed the task ${convertedImproveJob} at 
+      You have completed the task ${convertedImproveJob} at  ${hours}:${minutes}:${seconds}
       `;
       container.appendChild(p);
 
@@ -187,5 +221,18 @@ document
       button.style.backgroundColor = "#e0e0e0";
       button.style.color = "#a0a0a0";
       button.style.cursor = "default";
+
+      alert("Board updated Successfull");
     }
+  });
+
+// clear-history
+document
+  .getElementById("clear-history")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    const activityLog = document.getElementById("activity-log");
+    while (activityLog.firstChild) {
+      activityLog.removeChild(activityLog.firstChild);
+    }  
   });
