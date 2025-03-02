@@ -1,3 +1,8 @@
+// blog.html
+document.getElementById("blog-page").addEventListener("click", function () {
+  window.location.href = "./blog.html";
+});
+
 // Background random color
 document
   .getElementById("random-color-btn")
@@ -6,13 +11,48 @@ document
     document.body.style.backgroundColor = randomColor;
   });
 
-// blog.html
-document.getElementById("blog-page").addEventListener("click", function () {
-  window.location.href = "./blog.html";
-});
+function showCurrentDate() {
+  const now = new Date();
+
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const dayName = days[now.getDay()];
+
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  const monthName = months[now.getMonth()];
+
+  const dayNumber = now.getDate();
+  const year = now.getFullYear();
+
+  const formattedDate = `${dayName},<br>${monthName} ${dayNumber} ${year}`;
+
+  document.getElementById("current-date").innerHTML = formattedDate;
+}
+
+showCurrentDate();
 
 // Task section
-// card 1
+// // card 1
 document.getElementById("card-btn").addEventListener("click", function (event) {
   event.preventDefault();
   const button = document.getElementById("card-btn");
