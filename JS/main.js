@@ -61,9 +61,10 @@ document.getElementById("card-btn").addEventListener("click", function (event) {
   const mobile = document.getElementById("mobile");
   const convertedMobile = mobile.textContent;
   let now = new Date();
-  let hours = now.getHours();
-  let minutes = now.getMinutes();
-  let seconds = now.getSeconds();
+  let n = now.toLocaleString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 
   if (mainNumber > 0) {
     const sum = mainNumber - 1;
@@ -74,7 +75,7 @@ document.getElementById("card-btn").addEventListener("click", function (event) {
     const container = document.getElementById("activity-log");
     const p = document.createElement("p");
     p.innerHTML = `
-      You have completed the task ${convertedMobile} at  ${hours}:${minutes}:${seconds}
+      You have completed the task ${convertedMobile} at ${n}
       `;
     container.appendChild(p);
 
@@ -98,9 +99,10 @@ document
     const dark = document.getElementById("dark");
     const convertedDark = dark.textContent;
     let now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
+    let n = now.toLocaleString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
 
     if (mainNumber > 0) {
       const sum = mainNumber - 1;
@@ -111,7 +113,7 @@ document
       const container = document.getElementById("activity-log");
       const p = document.createElement("p");
       p.innerHTML = `
-      You have completed the task ${convertedDark} at  ${hours}:${minutes}:${seconds}
+      You have completed the task ${convertedDark} at ${n}
       `;
       container.appendChild(p);
 
@@ -135,9 +137,10 @@ document
     const optimize = document.getElementById("optimize");
     const convertedOptimize = optimize.textContent;
     let now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
+    let n = now.toLocaleString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
 
     if (mainNumber > 0) {
       const sum = mainNumber - 1;
@@ -148,7 +151,7 @@ document
       const container = document.getElementById("activity-log");
       const p = document.createElement("p");
       p.innerHTML = `
-      You have completed the task ${convertedOptimize} at  ${hours}:${minutes}:${seconds}
+      You have completed the task ${convertedOptimize} at ${n}
       `;
       container.appendChild(p);
 
@@ -172,9 +175,10 @@ document
     const emoji = document.getElementById("emoji");
     const convertedEmoji = emoji.textContent;
     let now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
+    let n = now.toLocaleString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
 
     if (mainNumber > 0) {
       const sum = mainNumber - 1;
@@ -185,7 +189,7 @@ document
       const container = document.getElementById("activity-log");
       const p = document.createElement("p");
       p.innerHTML = `
-      You have completed the task ${convertedEmoji} at  ${hours}:${minutes}:${seconds}
+      You have completed the task ${convertedEmoji} at ${n}
       `;
       container.appendChild(p);
 
@@ -209,9 +213,10 @@ document
     const integrate = document.getElementById("integrate");
     const convertedIntegrate = integrate.textContent;
     let now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
+    let n = now.toLocaleString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
 
     if (mainNumber > 0) {
       const sum = mainNumber - 1;
@@ -222,7 +227,7 @@ document
       const container = document.getElementById("activity-log");
       const p = document.createElement("p");
       p.innerHTML = `
-      You have completed the task ${convertedIntegrate} at  ${hours}:${minutes}:${seconds}
+      You have completed the task ${convertedIntegrate} at ${n}
       `;
       container.appendChild(p);
 
@@ -245,9 +250,10 @@ document
     const improveJob = document.getElementById("improve-job");
     const convertedImproveJob = improveJob.textContent;
     let now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
+    let n = now.toLocaleString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
 
     if (mainNumber > 0) {
       const sum = mainNumber - 1;
@@ -258,7 +264,7 @@ document
       const container = document.getElementById("activity-log");
       const p = document.createElement("p");
       p.innerHTML = `
-      You have completed the task ${convertedImproveJob} at  ${hours}:${minutes}:${seconds}
+      You have completed the task ${convertedImproveJob} at ${n}
       `;
       container.appendChild(p);
 
